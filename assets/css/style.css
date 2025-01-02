@@ -1,32 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
+
 /* Asterisk style selector to over-ride all default styles in tags */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 /* General styles */
-body{
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	/* Generic project styles */
-	color: #3a3a3a;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: Lato, sans-serif;
 }
 
 /* Header */
-header{
-    background-color: lightcoral;
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+}
+
+h1 {
+    font-family: "Oswald", serif;
 }
 
 /* Main Content */
-main{
+main {
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
 }
 
 /* Footer */
-footer{
+footer {
     background-color: orange;
 }
