@@ -39,8 +39,19 @@ h1 {
     color: #252525;
 }
 
-nav ul {
+nav ul#menu {
     list-style-type: none;
+    font-size: 110%;
+    letter-spacing: 4px;
+    padding-bottom: 10px;
+}
+
+ul#menu li{
+    margin-bottom: 1em;
+}
+
+.active{
+    border-bottom: solid 1px #3a3a3a;
 }
 
 /* Main Content */
