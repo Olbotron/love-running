@@ -25,6 +25,9 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a{
@@ -52,11 +55,39 @@ nav ul#menu {
 
 .active{
     border-bottom: solid 1px #3a3a3a;
+    width: 100vw;
+    background-color: #ffffff;
+
+}
+
+/* Navbar styles with dropdown toggle */
+nav{
+    position: absolute;
+    padding: 0 1rem;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+#nav-toggle{
+	display: none;
+}
+
+.nav-toggle-label{
+	font-size: 2rem;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav{
+	display: block;
 }
 
 /* Main Content */
 main {
-    padding-top: 200px;
+    padding-top: 47px;
     background-color: lightblue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
