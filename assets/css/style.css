@@ -46,7 +46,7 @@ nav ul#menu {
     padding-bottom: 10px;
 }
 
-ul#menu li{
+#menu > li{
     margin-bottom: 1em;
 }
 
