@@ -197,6 +197,18 @@ main {
     /* Override the general h3 color */
 }
 
+/* Gallery page */
+#photos img{
+    width: 100%;
+    /* Below is kept to maintain line height of alt text */
+    line-height: 1em;
+}
+
+#photos{
+    line-height: 0;
+}
+
+
 /* Footer */
 #social-networks{
 	text-align: center;
