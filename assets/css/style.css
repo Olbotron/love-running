@@ -17,6 +17,13 @@ body {
     font-family: Lato, sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: "Oswald", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -35,13 +42,6 @@ header a{
     color: inherit;
 }
 
-h1 {
-    font-family: "Oswald", serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
-
 i { 
     font-weight: 500 !important; 
 }
@@ -50,7 +50,6 @@ nav ul#menu {
     list-style-type: none;
     font-size: 110%;
     letter-spacing: 4px;
-    padding-bottom: 10px;
 }
 
 #menu > li{
@@ -101,6 +100,22 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text{
+    background-color: rgba(241, 109,107,.7);
+    font-size: 130%;
+    bottom: 30px;
+    width: 80%;
+    position: absolute;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3{
+    color: #ffffff;
 }
 
 /* Footer */
@@ -151,6 +166,11 @@ main {
 		/* Push main content down to accommodate larger header */
 		margin-top: 79px;
 	}
+
+    #cover-text{
+        width: 300px;
+        right: 50px;
+    }
 }
 
 /* Media query: tablets and larger (992px and up) */
