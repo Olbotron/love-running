@@ -51,10 +51,6 @@ header a{
     color: inherit;
 }
 
-i { 
-    font-weight: 500 !important; 
-}
-
 nav ul#menu {
     list-style-type: none;
     font-size: 110%;
